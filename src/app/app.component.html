@@ -1,0 +1,22 @@
+<div [formGroup]="nameForm" class="form-wrapper">
+
+  <div formArrayName="items"
+    *ngFor="let item of nameForm.get('items')['controls']; let i = index;">
+    <div [formGroupName]="i" class="form-test">
+      <label>Label</label>
+      <input formControlName="label" placeholder="Label">
+      <label>Value</label>
+      <input formControlName="value" placeholder="Value">
+    </div>
+  </div>
+
+  <div class="buttons">
+    <button (click)="addItem()">ADD INPUT</button>
+    <button (click)="getItems()">GET ITEMS</button>
+    <button (click)="getItemsValues()">GET ITEMS VALUES</button>
+  </div>
+
+</div>
+
+
+

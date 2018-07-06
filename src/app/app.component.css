@@ -1,0 +1,15 @@
+* {
+  font-family: sans-serif;
+}
+
+.form-wrapper {
+  margin: 30px;
+}
+
+.buttons {
+  margin: 20px;
+}
+
+.form-test, .buttons button {
+  margin: 10px;
+}
